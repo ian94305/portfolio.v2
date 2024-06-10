@@ -237,9 +237,9 @@ body {
   display: none;
 }
 
-.resume .resume_item:hover {
+/* .resume .resume_item:hover {
   color: #109d59;
-}
+} */
 /* 頭像 */
 .avatar-container {
     padding-top: 8%;
