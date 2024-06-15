@@ -132,6 +132,9 @@ body {
 .resume .resume_left .resume_skills ul li .skill_per {
   width: 50%;
   font-size: 12px;
+  display: flex; /* 将元素设置为 Flexbox 布局 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
   color: white;
 }
 
@@ -143,8 +146,38 @@ body {
   background: #fff;
 }
 
-.Rmore_name {
-  color: #f9f9f9;
+
+.rmore_contain {
+  color: #fff;
+  margin:30px auto;
+}
+.rmore-go {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rmore-link {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+.rmore-go p {
+  margin: 0;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.rmore-go i {
+  font-size: 16px;
+  color: #fff;
 }
 
 .resume .resume_left .resume_social .semi-bold {
@@ -242,9 +275,16 @@ body {
   display: none;
 }
 
-/* .resume .resume_item:hover {
+.resume .resume_item:hover {
   color: #109d59;
-} */
+}
+
+.skill_per:hover {
+  background-color: grey;
+  border-radius: 20px;
+
+  color:  #109d59;
+}
 /* 頭像 */
 .avatar-container {
     padding-top: 8%;
@@ -289,6 +329,7 @@ body {
   .qrcode-container img {
     width: 100px; /* 設置 QR Code 寬度 */
     height: 100px; /* 設置 QR Code 高度 */
+  
     border: 1px solid #ddd; /* 圖片邊框 */
     padding: 10px; /* 圖片內邊距 */
     background-color: #f9f9f9; /* 圖片背景顏色 */
