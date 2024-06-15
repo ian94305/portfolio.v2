@@ -30,7 +30,7 @@ body {
   width: 800px;
   height: auto;
   display: flex;
-  margin: 50px auto;
+  margin: 30px auto;
   flex-wrap: wrap; /* 添加这一行以启用 flex 换行 */
 }
 
@@ -141,6 +141,10 @@ body {
   left: 0;
   height: 100%;
   background: #fff;
+}
+
+.Rmore_name {
+  color: #f9f9f9;
 }
 
 .resume .resume_left .resume_social .semi-bold {
@@ -267,7 +271,42 @@ body {
     height: auto;
     object-fit: cover;
   }
+  .qrcode-container {
+    text-align: center; /* 使 QR Code 置中 */
+    margin-top: 20px; /* 上邊距 */
+  }
+  .selfy-container {
+    text-align: center; /* 使 QR Code 置中 */
+    z-index: -10;
+  }
+  .selfy-container img{
+    width: 100px; /* 設置 QR Code 寬度 */
+    height: 130px; /* 設置 QR Code 高度 */
+    padding: 10px; /* 圖片內邊距 */
   
+  }
+  
+  .qrcode-container img {
+    width: 100px; /* 設置 QR Code 寬度 */
+    height: 100px; /* 設置 QR Code 高度 */
+    border: 1px solid #ddd; /* 圖片邊框 */
+    padding: 10px; /* 圖片內邊距 */
+    background-color: #f9f9f9; /* 圖片背景顏色 */
+  }
+  .footer {
+    background-color: #333; /* 背景颜色 */
+    color: #fff; /* 字体颜色 */
+    text-align: center; /* 文本居中 */
+    padding: 10px 0; /* 上下内边距 */
+    bottom: 0; /* 固定在页面底部 */
+    width: 100%; /* 宽度占满 */
+    font-size: 14px; /* 字体大小 */
+}
+
+.footer p {
+    margin: 0; /* 清除默认的段落间距 */
+}
+
   
 /* 媒体查询 */
 @media (max-width: 780px) {
