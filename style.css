@@ -145,9 +145,13 @@ body {
   height: 100%;
   background: #fff;
 }
+.rmore_contain{
+  display:flex;
+  justify-content: space-between;
 
+}
 
-.rmore_contain {
+.rmore_box {
   color: #fff;
   margin:30px auto;
 }
@@ -327,8 +331,8 @@ body {
   }
   
   .qrcode-container img {
-    width: 100px; /* 設置 QR Code 寬度 */
-    height: 100px; /* 設置 QR Code 高度 */
+    width: 95px; /* 設置 QR Code 寬度 */
+    height: 95px; /* 設置 QR Code 高度 */
   
     border: 1px solid #ddd; /* 圖片邊框 */
     padding: 10px; /* 圖片內邊距 */
