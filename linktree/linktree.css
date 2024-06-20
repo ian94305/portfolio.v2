@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #d9cab3; /* 大地色背景 */
+}
+
+.linktree {
+    margin: 0 30%;
+    width: 100%;
+    border: 2px solid #000; /* 黑色边框 */
+    border-radius: 30px;
+    padding: 200px;
+    background-color: #fff; /* 白色背景 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+}
+
+.links-container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link-item {
+    background-color: #a68b69; /* 大地色调 */
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%; /* 宽度增加到 80% */
+    max-width: 600px; /* 最大宽度 600px，防止在大屏幕上过宽 */
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.link-item:hover {
+    background-color: #8d7252; /* 深色大地色调 */
+}
