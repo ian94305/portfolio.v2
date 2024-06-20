@@ -1,37 +1,57 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: sans-serif,Arial ;
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #d9cab3; /* 大地色背景 */
+    min-height: 100vh; /* 确保页面高度 */
+    background-color: #0f4158ad; /* 深蓝色背景 */
+    margin: 0;
 }
 
-.linktree {
-    margin: 0 30%;
-    width: 100%;
-    border: 2px solid #000; /* 黑色边框 */
-    border-radius: 30px;
-    padding: 200px;
-    background-color: #fff; /* 白色背景 */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
-}
-
-.links-container {
-
+.container {
+    width: 95%; /* 默认小屏幕时宽度为 95% */
+    max-width: 600px;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    justify-items: center;
     align-items: center;
 }
 
+.linktree-image {
+    width: 80%; /* 图片宽度 80% */
+    max-width: 300px; /* 最大宽度 300px */
+    margin-bottom: 20px; /* 图片与 linktree 间距 */
+}
+
+.linktree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #ffffff; /* 白色背景 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 轻微阴影 */
+    padding: 30px 20px;
+}
+
+.links-container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 90%;
+    margin:10px; /* 距离顶部的间距 */
+}
+
 .link-item {
-    background-color: #a68b69; /* 大地色调 */
+    background-color: #0f4158ad; /* 浅蓝色 */
     color: white;
-    padding: 20px;
     margin: 10px 0;
-    width: 80%; /* 宽度增加到 80% */
-    max-width: 600px; /* 最大宽度 600px，防止在大屏幕上过宽 */
+    width: 100%;
     text-align: center;
     border-radius: 5px;
     text-decoration: none;
@@ -39,5 +59,35 @@ body {
 }
 
 .link-item:hover {
-    background-color: #8d7252; /* 深色大地色调 */
+    background-color: #039be5; /* 深蓝色 */
+}
+
+/* 响应式设计 */
+@media (min-width: 480px) {
+    .container {
+        width: 90%; /* 中等屏幕时宽度为 90% */
+    }
+
+    .link-item {
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 80%; /* 大屏幕时宽度为 80% */
+        flex-direction: row;
+        padding:0 100px;
+    }
+
+    .linktree {
+        width: 100%;
+    }
+
+    .link-item {
+        padding: 20px;
+        width: 80%; /* 宽度增加到 80% */
+        max-width: 600px; /* 最大宽度 600px，防止在大屏幕上过宽 */
+    }
+
 }
