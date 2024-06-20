@@ -17,11 +17,12 @@ body {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+    margin: 0 10%;
 }
 
 .linktree-image {
     width: 80%; /* 图片宽度 80% */
-    max-width: 300px; /* 最大宽度 300px */
+    max-width: 150px; /* 最大宽度 300px */
     margin-bottom: 20px; /* 图片与 linktree 间距 */
 }
 
@@ -83,12 +84,18 @@ body {
 
     .linktree {
         width: 100%;
+
     }
 
     .link-item {
         padding: 20px;
         width: 80%; /* 宽度增加到 80% */
         max-width: 600px; /* 最大宽度 600px，防止在大屏幕上过宽 */
+    }
+    .linktree-image {
+
+        max-width: 250px; /* 最大宽度 300px */
+
     }
 
 }
