@@ -353,7 +353,7 @@ body {
 }
 
   
-/* 媒体查询 */
+
 @media (max-width: 780px) {
   .resume {
     flex-direction: column;
