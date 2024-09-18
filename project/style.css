@@ -1,80 +1,276 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0f4158; /* 使用指定的颜色 */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
 
-.portfolio-container {
-    width: 90%;
-    max-width: 1200px;
-    text-align: center;
+.container {
+  background-color: #eee7e7;
+  overflow: hidden;
 }
 
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 1em;
+/* Salute Section */
+.salute {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 
+.saluteTextContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saluteText {
+  color: #5f5c5c;
+  font-size: 20vw;
+  cursor: default;
+}
+
+.saluteImgContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.saluteImg {
+  width: 40%;
+  padding: 330px 0;
+}
+
+/* Job Title Section */
+.jobTitleContainer {
+  height: 50vh;
+}
+
+.dark {
+  background: url("./img/bg1.png");
+}
+
+.purple {
+  background: #9FD8E5 url("./img/bg2.png");
+}
+
+.jobTitle {
+  font-size: 10vw;
+  color: #333;
+  line-height: 50vh;
+  cursor: default;
+  transform: translateX(0);
+  padding-left: 10%;
+}
+
+
+/* Container for the button */
+.back-to-home {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  text-decoration: none;
+}
+
+.back-to-home:hover {
+  background-color: #0056b3;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-home i {
+  margin: 0;
+}
+
+
+/* Projects Section */
 .projects {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.projectsTitle {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 5vw;
+  color: #333;
 }
 
 .project {
-    background-color: #d1cfcfc0;
-    color: #0f4158;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project img {
-    width: auto;
-    min-width: 320px;
-    border-radius: 10px;
-    max-height: 150px;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #ddd;
 }
 
 .project h2 {
-    font-size: 1.5em;
-    margin: 0.5em 0;
+  font-size: 1.5rem;
+  margin: 20px;
+  color: #333;
+  text-align: center;
 }
 
 .project p {
-    font-size: 1em;
+  font-size: 1rem;
+  color: #666;
+  margin: 0 20px 20px;
+  text-align: justify;
 }
 
-a {
-    text-decoration: none; /* 去掉下划线 */
-    color: inherit; /* 继承父元素的颜色 */
-    font-weight: normal; /* 重置字体粗细 */
+.project a {
+  display: block;
+  text-decoration: none;
 }
 
-a:hover, a:focus, a:active {
-    outline: none; /* 去掉点击时的边框 */
-    text-decoration: underline; /* 悬停时显示下划线 */
-    color: inherit; /* 保持颜色一致 */
+.projectButton {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* 如果需要在悬停时改变颜色，可以添加以下样式 */
-a:hover {
-    color: #0f4158; /* 例如：悬停时变为深蓝色 */
-}
-/* 响应式设计 */
-@media (min-width: 600px) {
-    .projects {
-        grid-template-columns: 1fr 1fr;
-    }
+.projectButton:hover {
+  background-color: #0056b3;
 }
 
-@media (min-width: 900px) {
-    .projects {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+
+.githubContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.githubTitle {
+  font-size: 100px;
+  color: #333;
+}
+
+.githubChart {
+  width: 820px;
+  text-align: center;
+}
+
+.dates {
+  padding: 10px;
+  color: #555;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.box {
+  width: 15px;
+  height: 15px;
+  background-color: #171c25;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 3s all ease;
+}
+
+.active:nth-child(4n) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n+1) {
+  background-color: #195b2c;
+}
+
+.githubChart:hover .active:nth-child(2n) {
+  background-color: #063f24;
+}
+
+.githubSm {
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .saluteText {
+    font-size: 50vw;
+  }
+
+  .saluteImg {
+    width: 90%;
+  }
+
+  .jobTitle {
+    font-size: 15vw;
+  }
+
+  .projects {
+    padding: 0 30px;
+    text-align: center;
+  }
+
+  .project {
+    flex-direction: column;
+    height: max-content;
+  }
+
+  .project:nth-child(2n) {
+    flex-direction: column;
+  }
+
+  .phone,
+  .laptop {
+    transform: none !important;
+  }
+
+  .githubChart {
+    display: none;
+  }
+
+  .githubTitle {
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  .githubSm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: #555;
+    font-size: 30px;
+    text-align: center;
+  }
 }

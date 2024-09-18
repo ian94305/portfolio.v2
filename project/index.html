@@ -1,52 +1,132 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
-    <div class="portfolio-container">
-        <h1>作品集 SideProject</h1>
-        <div class="projects">
-            <div class="project">
-                <a href="https://ian94305.github.io/react-shop.github.io/">
-                <img src="../images/react-shop-cart.png" alt="Project 1">
-                <h2>React購物車</h2></a>
-                <p>利用React框架製作簡單的商城購物功能</p>
-            </div>
-            <div class="project">
-                <a href="https://ian94305.github.io/shopcart_template.github.io">
-                <img src="../images/sweetshop.png" alt="Project 1">
-                <h2>甜點店網站切版</h2></a>
-                <p>使用HTML、CSS、JS切版製作甜點商城網站介面</p>
-            </div>           
-            <div class="project">
-                <a href="./API/02/index.html">
-                <img src="../images/project1.png" alt="Project 1">
-                <h2>台中旅遊景點推薦</h2></a>
-                <p>透過API串接，用AJAX渲染生成網頁內容</p>
-            </div>           
-            <div class="project">
-                <a href="https://ian94305.github.io/javascript_gear.github.io/">
-                <img src="../images/jsavscript_note.png" alt="Project 1">
-                <h2>javascript練習筆記</h2></a>
-                <p>一些用javascript製作的小遊戲及工具</p>
-            </div>
-            <div class="project">
-                <a href="./JSTest/03/index.html">
-                <img src="../images/calculator.png" alt="Project 1">
-                <h2>簡易計算機製作</h2></a>
-                <p>簡易計算機製作</p>
-            </div>
-            <div class="project">
-                <a href="http://finteactAI_cursor">
-                <img src="../images/fintechAI.png" alt="Project 1">
-                <h2>finteacAI課程專案</h2></a>
-                <p>爬取各大財經網之新聞資料，運用BARD模型進行語意分析，並顯示於前端介面</p>
-            </div>
+  <a href="#home" class="back-to-home">
+    <i class="fas fa-home"></i>
+  </a>
+
+  <!-- INTRODUCTION -->
+  <div class="intro">
+
+
+    <div class="jobTitleContainer dark">
+      <div class="salute">
+        <div class="saluteImgContainer">
+          <img src="./img/person.png" alt="" class="saluteImg" />
         </div>
+        <div class="saluteTextContainer">
+          <h1 class="saluteText">嗨</h1>
+        </div>
+
+      </div>
     </div>
+    <div class="jobTitleContainer purple">
+      <h2 class="jobTitle">我叫吳直諺</h2>
+    </div>
+  </div>
+  <!-- PROJECTS -->
+  <div class="projects">
+    <h1 class="projectsTitle" data-aos="fade-up" data-aos-duration="1000">歡迎來到我的作品集</h1>
+
+
+
+    <div class="project" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200" data-aos-offset="200">
+      <a href="https://ian94305.github.io/shopcart_template.github.io">
+        <img src="../images/sweetshop.png" alt="甜點店網站切版">
+        <h2>甜點店網站</h2>
+      </a>
+    </div>
+
+    <div class="project" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-offset="200">
+      <a href="./API/02/index.html">
+        <img src="../images/project1.png" alt="台中旅遊景點推薦">
+        <h2>台中旅遊景點推薦</h2>
+      </a>
+    </div>
+    <div class="project" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200" data-aos-offset="200">
+      <a href="https://ian94305.github.io/react-shop.github.io/">
+        <img src="../images/react-shop-cart.png" alt="React購物車">
+        <h2>React購物車</h2>
+      </a>
+
+    </div>
+
+    <div class="project" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200" data-aos-offset="200">
+      <a href="https://ian94305.github.io/javascript_gear.github.io/">
+        <img src="../images/jsavscript_note.png" alt="JavaScript練習筆記">
+        <h2>JavaScript練習筆記</h2>
+      </a>
+    </div>
+
+    <div class="project" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200" data-aos-offset="200">
+      <a href="./JSTest/03/index.html">
+        <img src="../images/calculator.png" alt="簡易計算機製作">
+        <h2>簡易計算機製作</h2>
+      </a>
+    </div>
+
+    <div class="project" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200" data-aos-offset="200">
+      <a href="http://finteactAI_cursor">
+        <img src="../images/fintechAI.png" alt="FintechAI課程專案">
+        <h2>FintechAI課程專案</h2>
+      </a>
+    </div>
+
+
+    <!-- Continue for other projects... -->
+  </div>
+
+
+
+  <!-- Add more projects with AOS animations as needed -->
+  </div>
+  <!-- GITHUB -->
+  <div class="githubContainer">
+    <h1 class="githubTitle">Want to see all projects?</h1>
+    <div class="githubChart">
+      <div class="dates">
+        <span>Jan</span>
+        <span>Feb</span>
+        <span>Mar</span>
+        <span>Apr</span>
+        <span>May</span>
+        <span>Jun</span>
+        <span>Jul</span>
+        <span>Agu</span>
+        <span>Sep</span>
+        <span>Oct</span>
+        <span>Nov</span>
+        <span>Dec</span>
+      </div>
+      <div class="boxContainer"></div>
+      <h1 class="githubTitle">ON GITHUB</h1>
+    </div>
+    <div class="githubSm">
+      <a href="">
+        <img src="./img/github.png" alt="" />
+      </a>
+      <h2>Find Me on Github</h2>
+    </div>
+  </div>
+  </div>
+  <script src="./app.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
+
 </html>
