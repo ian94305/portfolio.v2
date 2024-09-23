@@ -27,9 +27,9 @@ for (let i = 0; i < 365; i++) {
   ];
 
 
-  const el = document.createElement("div")
-  el.classList = list.includes(i) ? "box active" : "box"
-  boxContainer.appendChild(el)
+  // const el = document.createElement("div")
+  // el.classList = list.includes(i) ? "box active" : "box"
+  // boxContainer.appendChild(el)
 }
 
 window.addEventListener("scroll", () => {
